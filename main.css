@@ -1,0 +1,47 @@
+h3 {
+    color: white;
+    text-align: left;
+    margin-left: 0%;
+    background-color: rgb(52, 80, 32);
+    margin-top: 0%;
+    padding-left: 1.25em;
+}
+
+body {
+    background-color: #076107;
+}
+
+.base-template > div {
+    background-color: rgba(2, 45, 4, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+  button {
+    text-decoration: none;
+    color: initial;
+}
+
+.banner { grid-area: header; background-size: cover; background-size: 100% 100%; 
+    background-image: url(https://cdn.discordapp.com/attachments/562012590478458880/1051259161612132392/98eb62a57e687c84ccc829fbedaba084b1effdd6.jpg);
+    color: white;
+}
+.newsitem { grid-area: pic; }
+.home { grid-area: main; }
+.item5 { grid-area: footer; }
+.navhome { grid-area: navhome}
+.navsight { grid-area: navsight}
+.navalert { grid-area: navalert}
+.tidbit { grid-area: tidbit }
+
+.base-template {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header header navhome navsight navalert'
+    'main main main main main main main main main main main main';
+    grid-gap: 10px;
+    background-color: #076107;
+    padding: 10px;
+  }
+
